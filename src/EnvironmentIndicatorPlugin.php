@@ -71,7 +71,7 @@ class EnvironmentIndicatorPlugin implements Plugin
 
     public function register(Panel $panel): void
     {
-        $panel->renderHook('panels::global-search.before', function () {
+        $panel->renderHook('panels::user-menu.before', function () {
             if (! $this->evaluate($this->visible)) {
                 return '';
             }
